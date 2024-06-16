@@ -14,7 +14,7 @@
 <br/>
 
 ### 백엔드
-`$ gradlew build`
+`$ gradlew clean build`
 <br/>
 `$ cd build/libs/`
 <br/>
