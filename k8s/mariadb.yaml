@@ -30,8 +30,8 @@ spec:
             - mountPath: /var/lib/mysql
               name: data
               subPath: mysql
-            - mountPath: /docker-entrypoint-initdb.d
-              name: init-db
+            - # mountPath: /docker-entrypoint-initdb.d
+              # name: init-db
           resources:
             limits:
               memory: 1Gi
