@@ -16,7 +16,7 @@ spec:
       containers:
         - name: mariadb
           # 여러분의 mariadb image 주소를 입력해주세요.
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_767f53fdc721
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_8af4761d4d35
           env:
             - name: TZ
               value: Asia/Seoul
@@ -30,8 +30,8 @@ spec:
             - mountPath: /var/lib/mysql
               name: data
               subPath: mysql
-            - # mountPath: /docker-entrypoint-initdb.d
-              # name: init-db
+            - mountPath: /docker-entrypoint-initdb.d
+              name: init-db
           resources:
             limits:
               memory: 1Gi
